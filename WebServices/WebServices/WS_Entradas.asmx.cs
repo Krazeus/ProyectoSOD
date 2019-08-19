@@ -20,7 +20,7 @@ namespace WebServices
         [WebMethod]
         public string VendoH()
         {
-            return " sssa 10 el palo ";
+            return " a 10 el paloo ";
         }
     }
 }
