@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Services;
-
+using System.Data;
 namespace WebServices
 {
     /// <summary>
@@ -18,9 +18,12 @@ namespace WebServices
     {
 
         [WebMethod]
-        public string VendoH()
+        public DataSet VendoH()
         {
-            return " a 10 el paloo ";
+
+            Conexion cone = new Conexion();
+         DataSet s = cone.Open();
+            return  s;
         }
     }
 }
